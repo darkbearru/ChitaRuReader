@@ -1,59 +1,17 @@
 # ChitaRuReader
 
-This template should help get you started developing with Vue 3 in Vite.
+Читалка новостей и текстов Чита.Ру на основе Vue 3 / Vite. Не коммерческий проект для самообучения Vue 3, Typescript и Unit-тестирования. 
 
-## Recommended IDE Setup
+## Цели
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+1. Освоение и практика фреймворка Vue 3
+2. Практика Typescript
+3. Освоение и практика Unit-тестирования
+4. Освоение инструмента по работе и тестированию API — [Postman](https://go.postman.co/workspace/Team-Workspace~e65f0eac-2680-43c1-8de2-cc352be99e70/collection/19814547-e0fd6c72-6d36-4bab-8d1d-db70468dd266?action=share&creator=19814547)
+5. Освоение и практика UI тестирования Cypress.
 
-## Type Support for `.vue` Imports in TS
+## Функционал
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+1. Получение списка новостей / текстов (последниее 100, ограничение в связи с коммерческой составляющей данных сайта Chita.Ru)
+2. Отображение текстов. Кеширование 20 последних прочитанных текстов
+3. Чтение комментариев под текстами
