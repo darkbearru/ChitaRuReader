@@ -1,0 +1,33 @@
+{
+    "result": {
+        "id": "173438",
+        "name": "Поджигатель травы в Забайкалье объяснил свой поступок — видео допроса",
+        "tags": {
+            "поджог травы": 0
+        },
+        "author": "Мария Буренкова",
+        "titlePhoto": {
+            "image": {
+                "name": "\/\/r.zbp.ru\/89\/02\/81eae1.587e26.2hxl.m8.ky.jpg",
+                "width": "800",
+                "height": "754",
+                "imageType": "jpg"
+            },
+            "preview": {
+                "name": "\/\/r.zbp.ru\/89\/02\/d1ceb1.587e26.1cle.8c.7v.jpg",
+                "width": "300",
+                "height": "283",
+                "imageType": "jpg"
+            },
+            "title": "Мужчина признался в поджоге травы в Улётовском районе",
+            "author": "ГУ МЧС по Забайкальскому краю",
+            "id": "726511",
+            "300x180": "\/\/r.zbp.ru\/300x180\/89\/02\/81eae1.587e26.2hxl.m8.ky.jpg"
+        },
+        "text": "<h4>Житель станции Харагун объяснил поджог травы в Улётовском районе Забайкальского края, видео допроса размещено на&nbsp;сайте Главного управления МЧС по региону.<\/h4>\n\n<iframe width=\"640\" height=\"360\" src=\"https:\/\/www.youtube.com\/embed\/T7lEOrYoTa4?&autoplay=1&mute=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>\n\n<p>Как сообщил мужчина, у&nbsp;него сломалась машина за 15&nbsp;километров от&nbsp;села Танга, он не&nbsp;думал, что&nbsp;трава может загореться от автомобиля. Как уточнили в управлении МЧС, пожарные потушили огонь на 6&nbsp;гектарах, угрозы селу нет. Виновного мужчину оштрафовали.<\/p>",
+        "commentsURL": "\/api-v2\/comments\/173438\/2826685\/",
+        "timeStamp": 1647398340
+    },
+    "error": 0,
+    "errorText": ""
+}
