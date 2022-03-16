@@ -73,9 +73,10 @@ abstract class Command
 
         if (empty ($record->image) || empty ($record->preview)) return null;
         
-        $record->{$size}   = "//r.zbp.ru/{$size}/{$record->image}";
-        $record->image     = $this->PhotoInfo ($record->image);
-        $record->preview   = $this->PhotoInfo ($record->preview);
+        $record->id         = $id;
+        $record->{$size}    = "//r.zbp.ru/{$size}/{$record->image}";
+        $record->image      = $this->PhotoInfo ($record->image);
+        $record->preview    = $this->PhotoInfo ($record->preview);
         
         return $record;
 
@@ -98,5 +99,18 @@ abstract class Command
         }
         return $result;
 
+    }
+
+    /**
+     * Получение timestamp
+     */
+    protected function GetTimeStamp ($date)
+    {
+        $d = DateTime::createFromFormat ('Y-m-d H:i:s', $date, null);
+        if ($d !== false) {
+            //return date('Y-m-d H:i:s eT', $d->getTimestamp());
+            return $d->getTimestamp ();
+        }
+        return false;
     }
 }

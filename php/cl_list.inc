@@ -11,6 +11,10 @@ class ListClass extends Command
     public function Run ()
     {
         $_page  = (empty ($this->_parameters) ? 0 : intval ($this->_parameters[0]));
+        // Ограничение по кол-ву получаемых страниц, 
+        // в связи с тем что данные беруться с коммерческого проекта
+        if ($_page > 5) $_page = 5;
+
         $_shift = $_page * $this->_on_page; 
 
         $records = $this->_db->qry_c (
@@ -35,6 +39,12 @@ class ListClass extends Command
                 $record->tags = array_keys (json_decode ($record->tags, 'array'));
             }
             $record->photo = $this->Photo ($record->photo_id);
+            $record->timeStamp = $this->GetTimeStamp ($record->news_date . ' ' . $record->news_time);
+
+            unset ($record->news_date);
+            unset ($record->news_time);
+            unset ($record->photo_id);
+
         }
         return $records;
     }
